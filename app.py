@@ -98,7 +98,7 @@ if page == "Home":
 
     with col2:
         # Image on the right
-        st.image("mysore_palace1.jpg",  use_column_width=True)
+        st.image("mysore_palace1.jpg", use_container_width=True)
 
 # Attractions Page with 3 images in a row
 elif page == "Attractions":
