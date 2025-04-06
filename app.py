@@ -73,6 +73,85 @@ elif page == "Attractions":
                 with cols[j]:
                     display_image(attractions[i + j]["image"], attractions[i + j]["name"])
 
+# Travel Guide Page
+elif page == "Travel Guide":
+    st.title("Travel Guide")
+    menu = st.radio("Explore the Travel Guide", [
+        "How to Reach", "Where to Stay", "Restaurants & Cuisine", "Local Festivals", "Shopping"
+    ])
+
+    if menu == "How to Reach":
+        st.subheader("✈️ How to Reach Mysore")
+        st.markdown("""
+        **By Air:** Mysore Airport (MYQ) – 12 km from the city.
+        Flights from Bangalore, Chennai, Hyderabad. Major international flights land at Bangalore Airport (170 km).
+
+        **By Train:** Mysore Junction is well-connected. Try Shatabdi Express, Chamundi Express, Tippu Express.
+
+        **By Road:** 145 km from Bangalore. KSRTC and private buses available. Ola/Uber & cabs too.
+        """)
+
+    elif menu == "Where to Stay":
+        st.subheader("🏨 Where to Stay")
+        st.markdown("""
+        **Luxury Hotels:**
+        - Radisson Blu Plaza
+        - Fortune JP Palace
+        - Royal Orchid Metropole
+
+        **Mid-Range:**
+        - Hotel Pai Vista
+        - The Quorum
+        - Sandesh The Prince
+
+        **Budget-Friendly:**
+        - Hotel Roopa
+        - Aishwarya Residency
+        - MTR Residency
+        """)
+
+    elif menu == "Restaurants & Cuisine":
+        st.subheader("🍽️ Restaurants & Cuisine")
+        st.markdown("""
+        **Must Try:**
+        - Mysore Masala Dosa
+        - Mysore Pak
+        - Chitranna
+        - Bisi Bele Bath
+
+        **Top Restaurants:**
+        - Vinayaka Mylari
+        - RRR Restaurant
+        - The Old House
+        - Oyster Bay
+        """)
+
+    elif menu == "Local Festivals":
+        st.subheader("🎉 Local Festivals")
+        st.markdown("""
+        **Mysore Dasara:**
+        - Grand Navaratri celebration
+        - Jamboo Savari: elephant procession
+
+        **Mysore Winter Festival:**
+        - December celebration with flowers, music & exhibitions
+        - Hosted at Mysore Palace
+        """)
+
+    elif menu == "Shopping":
+        st.subheader("🛍️ Shopping in Mysore")
+        st.markdown("""
+        **Local Specialties:**
+        - Mysore Silk Sarees
+        - Sandalwood products
+        - Wooden toys & souvenirs
+
+        **Markets to Explore:**
+        - Devaraja Market
+        - Cauvery Handicrafts Emporium
+        - Mall of Mysore
+        """)
+
 # Map Page
 elif page == "Map":
     st.title("Map of Attractions")
